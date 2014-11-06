@@ -1,0 +1,28 @@
+{
+    "name": "ppokatilo/jms-deyaml-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony bundle adding YAML deserialization to the JMS serializer bundle",
+    "keywords": [ "deserialization", "yaml" , "jms", "symfony" ],
+    "homepage": "http://github.com/SHyx0rmZ/jms-deyaml-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Patrick Pokatilo",
+            "email": "mail@shyxormz.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "jms/serializer-bundle": "~0.9",
+        "symfony/config": "~2.0",
+        "symfony/dependency-injection": "~2.0",
+        "symfony/http-kernel": "~2.0",
+        "ppokatilo/jms-deyaml": "~1.0"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "SHyx0rmZ\\JMSDeYamlBundle\\": ""
+        }
+    }
+}
