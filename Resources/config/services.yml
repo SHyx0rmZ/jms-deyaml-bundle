@@ -6,3 +6,8 @@ services:
       - @jms_serializer.object_constructor
     tags:
       - { name: jms_serializer.deserialization_visitor, format: yml }
+
+  shyxormz.jms_deyaml.yaml_date_time_handler:
+    class: SHyx0rmZ\JMSDeYaml\DateTimeHandler
+    tags:
+      - { name: jms_serializer.subscribing_handler }
