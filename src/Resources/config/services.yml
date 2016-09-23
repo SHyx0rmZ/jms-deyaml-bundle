@@ -2,8 +2,8 @@ services:
   shyxormz.jms_deyaml.yaml_deserialization_visitor:
     class: SHyx0rmZ\JMSDeYaml\YamlDeserializationVisitor
     arguments:
-      - @jms_serializer.naming_strategy
-      - @jms_serializer.object_constructor
+      - "@jms_serializer.naming_strategy"
+      - "@jms_serializer.object_constructor"
     tags:
       - { name: jms_serializer.deserialization_visitor, format: yml }
 

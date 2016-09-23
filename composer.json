@@ -19,10 +19,19 @@
         "symfony/http-kernel": "~2.0",
         "ppokatilo/jms-deyaml": "~1.0.1"
     },
+    "require-dev": {
+        "phpunit/phpunit": "^5.0",
+        "symfony/framework-bundle": "~2.0"
+    },
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "SHyx0rmZ\\JMSDeYamlBundle\\": ""
+            "SHyx0rmZ\\JMSDeYamlBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SHyx0rmZ\\JMSDeYamlBundle\\Test\\": "tests/"
         }
     }
 }
